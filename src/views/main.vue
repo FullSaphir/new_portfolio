@@ -5,6 +5,7 @@ import action53web from '@/components/action53web.vue'
 import pasjeu from '@/components/pasjeu.vue'
 import soleil from '@/components/soleil.vue'
 import sites from '@/components/sites.vue'
+import stella from '@/components/stella.vue'
 import prototypes from '@/components/prototypes.vue'
 import { ref } from 'vue'
 
@@ -32,8 +33,9 @@ const changeGame= (game) => {
 		<li class="font-bold py-3">
 		<span>Game Jam</span>
 		</li>
-		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('pasjeu')"><a>Il n'y a pas de jeux ici</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('pasjeu')"><a>Il n'y a pas de jeux ici</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('soleil')"><a>1,2,3... 10 soleil !</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('stella')"><a>Stella</a></li>
 
 		<li class="font-bold py-3">
 		<span>Autres</span>
@@ -52,6 +54,8 @@ const changeGame= (game) => {
 		<pasjeu v-if="currentGame=='pasjeu'"></pasjeu>
 
 		<soleil v-if="currentGame=='soleil'"></soleil>
+
+		<stella v-if="currentGame=='stella'"></stella>
 
 		<sites v-if="currentGame=='sites'"></sites>
 
