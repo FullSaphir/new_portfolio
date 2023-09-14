@@ -48,15 +48,15 @@ const showBig = (newImage) => {
                 <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/H1ZiwRZD#8-fuaxfWdfGkmHZ2JVbCLglf7lXuFa7em_bv_54JvvYk">Télécharger Stella</a></b></p>
             </div>
 
-            <div class="py-5 flex justify-around content-center">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/stella/1.jpg')" src="/img/stella/1.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/stella/2.jpg')" src="/img/stella/2.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/stella/3.jpg')" src="/img/stella/3.jpg" alt="game logo">   
-            </div>
 
-            <div class="py-3 flex justify-around content-center">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/stella/4.jpg')" src="/img/stella/4.jpg" alt="game logo 4">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/stella/5.jpg')" src="/img/stella/5.jpg" alt="game logo 5">
+            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/1.jpg')" src="/img/stella/1.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/2.jpg')" src="/img/stella/2.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/3.jpg')" src="/img/stella/3.jpg" alt="game logo">   
+
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/4.jpg')" src="/img/stella/4.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/5.jpg')" src="/img/stella/5.jpg" alt="game logo">
+
             </div>
 
         </div>
@@ -66,12 +66,9 @@ const showBig = (newImage) => {
 
 <style>
 	#main {
-		width: 50rem;
         color: white;
 		background-color: rgba(27, 29, 32, 0.6);
         font-family: Lato;
-        padding: 0.5rem 2rem 0.5rem 2rem;
-        margin : 5rem;
         z-index: 10;
 	}
 

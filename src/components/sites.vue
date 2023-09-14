@@ -20,13 +20,9 @@ const showBig = (newImage) => {
 
     <div id="main">
         <div class="font-['Lato'] text-4xl underline underline-offset-[15px] decoration-1 py-8"> Sites Web </div>
-        
-        <div class="flex justify-around content-center">
-            <iframe width="747" height="400" src="https://www.youtube.com/embed/DDK-_Yn9BU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+    
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/DDK-_Yn9BU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-        
         <div class="text-xl py-5">
 
             <div class=" py-3">⚪ Kuisto était un site web sur lequel des utilisateurs pouvaient consulter, créer et commenter des recettes de cuisines en ligne.</div>
@@ -38,12 +34,11 @@ const showBig = (newImage) => {
             <div class=" py-7"> ⚪ J'ai également crée ce portefolio grâce à Vue3, Tailwind et DaisyUI. </div>
             
             <div class=" py-7"> ⚪ Voici quelques images d'un autre site crée pour un projet étudiant en DUT Informatique : </div>
-
-
-            <div class="py-3 flex justify-around content-center">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/sites/4.png')" src="/img/sites/4.png" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/sites/2.png')" src="/img/sites/2.png" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/sites/3.png')" src="/img/sites/3.png" alt="game logo">   
+            
+            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/sites/4.png')" src="/img/sites/4.png" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/sites/2.png')" src="/img/sites/2.png" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/sites/3.png')" src="/img/sites/3.png" alt="game logo">   
             </div>
 
         </div>
@@ -53,12 +48,9 @@ const showBig = (newImage) => {
 
 <style>
 	#main {
-		width: 50rem;
         color: white;
 		background-color: rgba(27, 29, 32, 0.6);
         font-family: Lato;
-        padding: 0.5rem 2rem 0.5rem 2rem;
-        margin : 5rem;
         z-index: 10;
 	}
 

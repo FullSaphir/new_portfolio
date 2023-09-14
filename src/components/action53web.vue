@@ -20,10 +20,8 @@ const showBig = (newImage) => {
 
     <div id="main">
         <div class="font-['Lato'] text-4xl underline underline-offset-[15px] decoration-1 py-8"> Action53 Web </div>
-        
-        <div class="flex justify-around content-center">
-            <iframe width="747" height="400" src="https://www.youtube.com/embed/tJMv1GOP6jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/tJMv1GOP6jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <div class="text-xl py-5">
 
@@ -41,10 +39,11 @@ const showBig = (newImage) => {
                 <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/O5Bg2KKD#ljSqNI8b317emeT5tgQNsDH9gLsrlxSdcccx4x66Ch8">Télécharger Action53</a></b></p>
             </div>
 
-            <div class="py-5 flex justify-around content-center">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/action53web/1.jpg')" src="/img/action53web/1.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/action53web/2.jpg')" src="/img/action53web/2.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/action53web/3.jpg')" src="/img/action53web/3.jpg" alt="game logo">   
+            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/action53web/1.jpg')" src="/img/action53web/1.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/action53web/2.jpg')" src="/img/action53web/2.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/action53web/3.jpg')" src="/img/action53web/3.jpg" alt="game logo">   
+ 
             </div>
 
         </div>

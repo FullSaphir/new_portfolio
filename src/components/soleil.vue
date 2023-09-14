@@ -35,10 +35,11 @@ const showBig = (newImage) => {
         <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/214HFTTT#5eh7bcnpJZGZWJJliGEiEKcAUPrpvAKP5u7PMC1L0wQ">Télécharger "1,2,3... 10 soleil !"</a></b></p>
     </div>
 
-    <div class="py-5 flex justify-around content-center">
-        <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/soleil/3.png')" src="/img/soleil/3.png" alt="game logo">
-        <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/soleil/2.png')" src="/img/soleil/2.png" alt="game logo">   
-    </div>
+    <div class="flex flex-wrap justify-around overflow-y-scroll ">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/soleil/3.png')" src="/img/soleil/3.png" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/soleil/2.png')" src="/img/soleil/2.png" alt="game logo">
+   
+            </div>
 
         </div>
     </div>
@@ -47,12 +48,9 @@ const showBig = (newImage) => {
 
 <style>
 	#main {
-		width: 50rem;
         color: white;
 		background-color: rgba(27, 29, 32, 0.6);
         font-family: Lato;
-        padding: 0.5rem 2rem 0.5rem 2rem;
-        margin : 5rem;
         z-index: 10;
 	}
 

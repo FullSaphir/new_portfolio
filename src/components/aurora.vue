@@ -21,9 +21,9 @@ const showBig = (newImage) => {
     <div id="main">
         <div class="font-['Lato'] text-4xl underline underline-offset-[15px] decoration-1 py-8"> La Gare d'Aurora </div>
         
-        <div class="flex justify-around content-center">
-            <iframe width="747" height="400" src="https://www.youtube.com/embed/X4xu4B842J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/X4xu4B842J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
         <div class="text-xl py-5">
 
@@ -39,22 +39,18 @@ const showBig = (newImage) => {
                 <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/C4Y2RTCT#4TglehI22e-_gi7b4b1KMU2MxSSZh4jKRnr-aDMI-Ck">Télécharger La Gare d'Aurora</a></b></p>
             </div>
 
-            <div class="py-5 flex justify-around content-center">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/1.jpg')" src="/img/aurora/1.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/2.png')" src="/img/aurora/2.png" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/3.jpg')" src="/img/aurora/3.jpg" alt="game logo">   
-            </div>
+            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/1.jpg')" src="/img/aurora/1.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/2.png')" src="/img/aurora/2.png" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/3.jpg')" src="/img/aurora/3.jpg" alt="game logo">   
 
-            <div class="py-3 flex justify-around content-center">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/4.jpg')" src="/img/aurora/4.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/5.jpg')" src="/img/aurora/5.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/6.jpg')" src="/img/aurora/6.jpg" alt="game logo">   
-            </div>
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/4.jpg')" src="/img/aurora/4.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/5.jpg')" src="/img/aurora/5.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/6.jpg')" src="/img/aurora/6.jpg" alt="game logo">   
 
-            <div class="py-3 flex justify-around content-center">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/7.png')" src="/img/aurora/7.png" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/8.jpg')" src="/img/aurora/8.jpg" alt="game logo">
-                <img class="w-48 h-32 mx-5 rounded-md" @click="showBig('/img/aurora/9.jpg')" src="/img/aurora/9.jpg" alt="game logo">   
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/7.png')" src="/img/aurora/7.png" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/8.jpg')" src="/img/aurora/8.jpg" alt="game logo">
+                <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/9.jpg')" src="/img/aurora/9.jpg" alt="game logo">   
             </div>
 
         </div>
@@ -64,12 +60,9 @@ const showBig = (newImage) => {
 
 <style>
 	#main {
-		width: 50rem;
         color: white;
 		background-color: rgba(27, 29, 32, 0.6);
         font-family: Lato;
-        padding: 0.5rem 2rem 0.5rem 2rem;
-        margin : 5rem;
         z-index: 10;
 	}
 

@@ -19,10 +19,18 @@ const changeGame= (game) => {
 
 <template>
 
-	<ul id="menu" class="text-xl px-5 fixed text-white top-1/4 w-66 z-50 p-2 rounded-box">
 
+	<details class="dropdown z-40 m-5 fixed break-keep">
 
-		<li class="font-bold py-3 ">
+	<summary class="m-1 btn btn-circle btn-darkBlue">      
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+	</summary>
+
+	<ul class="shadow bg-base-100 rounded-box mx-5 my-5">	
+
+		<ul id="menu" class="text-xl fixed text-white z-50 rounded-box 	bg-[#27292D] p-5">
+		
+		<li class="font-bold py-3">
 		<span>Mes jeux principaux</span>
 		</li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('action53web')"><a>Action53 Web</a></li>
@@ -44,7 +52,11 @@ const changeGame= (game) => {
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('prototypes')"><a>Prototypes</a></li>
 	</ul>
 
-    <div class="flex justify-around flex-wrap">
+	</ul>
+	</details>
+
+
+    <div class="flex justify-around overflow-y-scroll">
 		<action53web v-if="currentGame=='action53web'"></action53web>
 
 		<action53r v-if="currentGame=='action53r'"></action53r>
