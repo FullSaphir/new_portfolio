@@ -39,7 +39,7 @@ const showBig = (newImage) => {
                 <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/O5Bg2KKD#ljSqNI8b317emeT5tgQNsDH9gLsrlxSdcccx4x66Ch8">Télécharger Action53</a></b></p>
             </div>
 
-            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+            <div class="flex flex-wrap justify-around">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/action53web/1.jpg')" src="/img/action53web/1.jpg" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/action53web/2.jpg')" src="/img/action53web/2.jpg" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/action53web/3.jpg')" src="/img/action53web/3.jpg" alt="game logo">   

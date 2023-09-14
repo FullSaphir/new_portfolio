@@ -35,7 +35,7 @@ const showBig = (newImage) => {
         <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/214HFTTT#5eh7bcnpJZGZWJJliGEiEKcAUPrpvAKP5u7PMC1L0wQ">Télécharger "1,2,3... 10 soleil !"</a></b></p>
     </div>
 
-    <div class="flex flex-wrap justify-around overflow-y-scroll ">
+    <div class="flex flex-wrap justify-around">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/soleil/3.png')" src="/img/soleil/3.png" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/soleil/2.png')" src="/img/soleil/2.png" alt="game logo">
    

@@ -39,7 +39,7 @@ const showBig = (newImage) => {
                 <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/C4Y2RTCT#4TglehI22e-_gi7b4b1KMU2MxSSZh4jKRnr-aDMI-Ck">Télécharger La Gare d'Aurora</a></b></p>
             </div>
 
-            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+            <div class="flex flex-wrap justify-around">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/1.jpg')" src="/img/aurora/1.jpg" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/2.png')" src="/img/aurora/2.png" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/aurora/3.jpg')" src="/img/aurora/3.jpg" alt="game logo">   

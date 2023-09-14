@@ -35,7 +35,7 @@ const showBig = (newImage) => {
         <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/n4w1DBCL#JbvpYxWu7S4UrRK9oJ1_FDu4VTZH81v7aH_v48dytK8">Télécharger "Il n'y a pas de jeux ici"</a></b></p>
     </div>
 
-    <div class="flex flex-wrap justify-around overflow-y-scroll ">
+    <div class="flex flex-wrap justify-around">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/pasjeu/1.jpg')" src="/img/pasjeu/1.jpg" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/pasjeu/2.jpg')" src="/img/pasjeu/2.jpg" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/pasjeu/3.jpg')" src="/img/pasjeu/3.jpg" alt="game logo">    

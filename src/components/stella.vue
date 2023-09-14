@@ -49,7 +49,7 @@ const showBig = (newImage) => {
             </div>
 
 
-            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+            <div class="flex flex-wrap justify-around">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/1.jpg')" src="/img/stella/1.jpg" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/2.jpg')" src="/img/stella/2.jpg" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/stella/3.jpg')" src="/img/stella/3.jpg" alt="game logo">   

@@ -35,7 +35,7 @@ const showBig = (newImage) => {
             
             <div class=" py-7"> ⚪ Voici quelques images d'un autre site crée pour un projet étudiant en DUT Informatique : </div>
             
-            <div class="flex flex-wrap justify-around overflow-y-scroll ">
+            <div class="flex flex-wrap justify-around">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/sites/4.png')" src="/img/sites/4.png" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/sites/2.png')" src="/img/sites/2.png" alt="game logo">
                 <img class="w-5/12 aspect-video mx-5 my-5 rounded-md" @click="showBig('/img/sites/3.png')" src="/img/sites/3.png" alt="game logo">   
