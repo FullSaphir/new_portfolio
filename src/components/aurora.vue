@@ -36,7 +36,7 @@ const showBig = (newImage) => {
             <div class=" py-5">La Gare d'Aurora est téléchargeable en cliquant sur le lien ci-dessous :</div>
             
             <div class=" py-5">
-                <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/C4Y2RTCT#4TglehI22e-_gi7b4b1KMU2MxSSZh4jKRnr-aDMI-Ck">Télécharger La Gare d'Aurora</a></b></p>
+                <p class="hover:bg-sky-700 active:bg-sky-500 w-max"><b><a href="https://mega.nz/file/SwYX3JCb#qpqtT7lTWAabIjd1HqLWpJHDFsoNNnMraakcwajf3_Y">Télécharger La Gare d'Aurora</a></b></p>
             </div>
 
             <div class="flex flex-wrap justify-around">
