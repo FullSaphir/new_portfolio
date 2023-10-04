@@ -7,6 +7,7 @@ import soleil from '@/components/soleil.vue'
 import sites from '@/components/sites.vue'
 import stella from '@/components/stella.vue'
 import prototypes from '@/components/prototypes.vue'
+import chats from '@/components/chats.vue'
 import { ref } from 'vue'
 
 var currentGame = ref("aurora")
@@ -44,12 +45,14 @@ const changeGame= (game) => {
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('pasjeu')"><a>Il n'y a pas de jeux ici</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('soleil')"><a>1,2,3... 10 soleil !</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('stella')"><a>Stella</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('chats')"><a>Petits Chats</a></li>
 
 		<li class="font-bold py-3">
 		<span>Autres</span>
 		</li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('sites')"><a>Sites</a></li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('prototypes')"><a>Prototypes</a></li>
+		<a href="Curiculum Vitae.pdf"><li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"><a>Curriculum vitæ</a></li></a>
 	</ul>
 
 	</ul>
@@ -72,6 +75,9 @@ const changeGame= (game) => {
 		<sites v-if="currentGame=='sites'"></sites>
 
 		<prototypes v-if="currentGame=='prototypes'"></prototypes>
+
+		<chats v-if="currentGame=='chats'"></chats>
+
     </div>
 
     <div id="bg"></div>
