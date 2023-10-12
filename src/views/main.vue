@@ -52,7 +52,7 @@ const changeGame= (game) => {
 		</li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('sites')"><a>Sites</a></li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('prototypes')"><a>Prototypes</a></li>
-		<a href="Curiculum Vitae.pdf"><li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"><a>Curriculum vitæ</a></li></a>
+		<!--<a href="Curiculum Vitae.pdf"><li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"><a>Curriculum vitæ</a></li></a>-->
 	</ul>
 
 	</ul>
