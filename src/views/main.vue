@@ -3,8 +3,12 @@ import aurora from '@/components/aurora.vue'
 import action53r from '@/components/action53r.vue'
 import action53web from '@/components/action53web.vue'
 import pasjeu from '@/components/pasjeu.vue'
+import heuresbleues from '@/components/heuresbleues.vue'
 import soleil from '@/components/soleil.vue'
 import sites from '@/components/sites.vue'
+import vespera from '@/components/vespera.vue'
+import asterie from '@/components/asterie.vue'
+import invocation from '@/components/invocation.vue'
 import stella from '@/components/stella.vue'
 import prototypes from '@/components/prototypes.vue'
 import chats from '@/components/chats.vue'
@@ -20,16 +24,13 @@ const changeGame= (game) => {
 
 <template>
 
-
-	<details class="dropdown z-40 m-5 fixed break-keep">
+	<details class="dropdown z-40 m-5 absolute" open>
 
 	<summary class="m-1 btn btn-circle btn-darkBlue">      
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
 	</summary>
 
-	<ul class="shadow bg-base-100 rounded-box mx-5 my-5">	
-
-		<ul id="menu" class="text-xl fixed text-white z-50 rounded-box 	bg-[#27292D] p-5">
+		<ul id="menu" class="text-xl text-white z-50 rounded-box bg-[#27292D] p-5 overflow-y">
 		
 		<li class="font-bold py-3">
 		<span>Mes jeux principaux</span>
@@ -37,6 +38,9 @@ const changeGame= (game) => {
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('action53web')"><a>Action53 Web</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('action53r')"><a>Action53 R</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('aurora')"><a>La Gare d'Aurora</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('heuresbleues')"><a>Les Heures Bleues</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('vespera')"><a>Vespera</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('asterie')"><a>Les Heures Bleues : Astérie</a></li>
 
 
 		<li class="font-bold py-3">
@@ -46,6 +50,7 @@ const changeGame= (game) => {
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('soleil')"><a>1,2,3... 10 soleil !</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('stella')"><a>Stella</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('chats')"><a>Petits Chats</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('invocation')"><a>Invocation</a></li>
 
 		<li class="font-bold py-3">
 		<span>Autres</span>
@@ -55,22 +60,30 @@ const changeGame= (game) => {
 		<!--<a href="Curiculum Vitae.pdf"><li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"><a>Curriculum vitæ</a></li></a>-->
 	</ul>
 
-	</ul>
+
 	</details>
 
 
-    <div class="flex justify-around overflow-y-scroll">
+    <div class="flex justify-around">
 		<action53web v-if="currentGame=='action53web'"></action53web>
 
 		<action53r v-if="currentGame=='action53r'"></action53r>
 
 		<aurora v-if="currentGame=='aurora'"></aurora>
+
+		<heuresbleues v-if="currentGame=='heuresbleues'"></heuresbleues>
+
+		<vespera v-if="currentGame=='vespera'"></vespera>
+
+		<asterie v-if="currentGame=='asterie'"></asterie>
         
 		<pasjeu v-if="currentGame=='pasjeu'"></pasjeu>
 
 		<soleil v-if="currentGame=='soleil'"></soleil>
 
 		<stella v-if="currentGame=='stella'"></stella>
+
+		<invocation v-if="currentGame=='invocation'"></invocation>
 
 		<sites v-if="currentGame=='sites'"></sites>
 
