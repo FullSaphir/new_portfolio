@@ -19,7 +19,7 @@ const showBig = (newImage) => {
     </div>
 
     <div id="main">
-        <div class="font-['Lato'] text-4xl underline underline-offset-[15px] decoration-1 py-8">Les Heures Bleues : L'Antre d'Astérie</div>
+        <div class="font-['Lato'] text-4xl underline underline-offset-[15px] decoration-1 py-8">Les Heures Bleues : Mariage à Astérie</div>
         
         <div class="flex justify-around content-center">
             <img width="747" height="400" src="/img/asterie/4.jpg" alt="game image">
@@ -86,3 +86,4 @@ const showBig = (newImage) => {
         height: 100%;
     }
 </style>
+
